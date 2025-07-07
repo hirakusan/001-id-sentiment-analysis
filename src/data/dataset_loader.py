@@ -14,6 +14,7 @@ class HuggingFaceDatasetLoader:
 
     def explore_dataset(self):
         if self.df is None:
+            #KONDISI JIKA DATA SET BELUM DI-LOAD
             raise ValueError("Dataset belum di-load. Jalankan load_dataset() terlebih dahulu.")
 
         info = {
